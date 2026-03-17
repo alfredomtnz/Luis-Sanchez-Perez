@@ -1,3 +1,253 @@
+/* =========================================================
+   NUEVOS ESTILOS PARA LA BARRA Y SECCIONES
+   ========================================================= */
+
+.main-header {
+    width: 100%;
+    background-color: #142850; /* Color guinda gubernamental */
+    border-bottom: 4px solid #ddc9a3; /* Un toque dorado/arena para contrastar */
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 18px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #60651a; /* Color de resaltado */
+}
+
+/* =========================================================
+   ESTILOS DE CONTENEDORES (PANTALLA COMPLETA)
+   ========================================================= */
+
+/* Hacemos que la sección ocupe toda la pantalla y centre el contenido */
+.seccion-contenido {
+    padding: 40px 20px;
+    min-height: calc(100vh - 55px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Tarjeta principal más ancha (1100px) */
+.caja-nueva-seccion {
+    width: 100%;
+    max-width: 2000px; 
+    min-height: 85vh;
+    margin: 10 auto;
+    background-color: #ffffff;
+    padding: 50px; 
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.caja-nueva-seccion h2 {
+    color: #5b152b; /* Guinda para los títulos nuevos */
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Excepción para la sección de trayectoria (tu CV) para que no se deforme con el centrado */
+#trayectoria.seccion-contenido {
+    display: block;
+    padding-top: 40px;
+}
+
+/* =========================================================
+   ESTILOS PARA LA PÁGINA PRINCIPAL (PRESENTACIÓN)
+   ========================================================= */
+
+.presentacion-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Tarjeta izquierda (Foto y contacto) */
+.presentacion-perfil {
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+    background-color: #f9f9fb;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.presentacion-foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #5b152b; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.presentacion-contacto {
+    text-align: left;
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+.presentacion-contacto h3 {
+    color: #5b152b;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.presentacion-contacto p {
+    font-size: 14px;
+    margin: 10px 0;
+    word-wrap: break-word;
+    color: #444;
+}
+
+.presentacion-contacto a {
+    color: #002855;
+    text-decoration: none;
+}
+
+.presentacion-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Columna derecha (Texto) */
+.presentacion-texto {
+    flex: 2;
+}
+
+.presentacion-texto .saludo-titulo {
+    font-size: 32px;
+    color: #002855; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: none; 
+}
+
+.intro-texto {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Caja destacada de la filosofía */
+.filosofia-caja {
+    background-color: #fcf8f2; 
+    border-left: 5px solid #ddc9a3; 
+    padding: 25px;
+    border-radius: 0 8px 8px 0;
+}
+
+.filosofia-intro {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5b152b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.filosofia-caja ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.filosofia-caja li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 25px;
+}
+
+.filosofia-caja li:last-child {
+    margin-bottom: 0;
+}
+
+.filosofia-caja li::before {
+    content: "■"; 
+    color: #5b152b;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Responsividad general */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links a {
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .seccion-contenido {
+        padding: 20px 10px;
+        min-height: auto;
+        display: block;
+    }
+    .caja-nueva-seccion {
+        padding: 30px 20px;
+    }
+    .presentacion-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .presentacion-perfil {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .presentacion-texto .saludo-titulo {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   TU CÓDIGO ORIGINAL DEL CV (INTACTO)
+   ========================================================= */
+
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,12 +258,12 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 2000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Columna izquierda pequeña, derecha grande */
+    grid-template-columns: 1fr 2fr; 
     gap: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -21,7 +271,7 @@ body {
 
 /* Left column (Photo and Contact Info) */
 .left-column {
-    background-color: #12550b;
+    background-color: #8a930b;
     color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -34,7 +284,7 @@ body {
 
 .profile-photo {
     width: 130px;
-    height: 150px; /* Si la foto se deforma, cambia esto a 'height: auto;' */
+    height: 150px; 
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ffffff;
@@ -67,7 +317,7 @@ body {
 .contact-info p {
     font-size: 14px;
     margin: 5px 0;
-    word-wrap: break-word; /* Evita que el correo se salga si es muy largo */
+    word-wrap: break-word; 
 }
 
 /* Right column (Content) */
@@ -105,20 +355,17 @@ body {
 }
 
 /* --- RESPONSIVIDAD (MÓVIL) --- */
-/* Esto hace que la página se adapte a celulares */
-
 @media (max-width: 768px) {
     .container {
-        /* Cambia a una sola columna */
         grid-template-columns: 1fr;
-        width: 95%; /* Ocupa casi todo el ancho de la pantalla */
+        width: 95%; 
         margin: 10px auto;
         padding: 15px;
-        gap: 0; /* Quitamos el espacio entre columnas */
+        gap: 0; 
     }
 
     .left-column {
-        border-radius: 8px 8px 0 0; /* Bordes redondeados solo arriba */
+        border-radius: 8px 8px 0 0; 
         padding: 30px 15px;
         margin-bottom: 20px;
     }
@@ -138,15 +385,288 @@ body {
 
     .right-column h2 {
         font-size: 20px;
-        text-align: center; /* Títulos centrados en móvil */
+        text-align: center; 
     }
     
     .job ul {
-        margin-left: 15px; /* Menos margen en listas para ganar espacio */
+        margin-left: 15px; 
     }
 
     .job li, .right-column p {
-        font-size: 14px; /* Texto ligeramente más pequeño para leer mejor */
-        text-align: justify; /* Justificado para que se vea bloque limpio */
+        font-size: 14px; 
+        text-align: justify; 
+    }
+}
+/* =========================================================
+   ESTILOS PARA LA SECCIÓN OIC (TARJETAS Y BLOQUES)
+   ========================================================= */
+
+.titulo-seccion-principal {
+    text-align: center;
+    color: #5b152b;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    border-bottom: none !important;
+}
+
+.oic-bloque {
+    margin-bottom: 40px;
+}
+
+.oic-tema-titulo {
+    color: #002855;
+    font-size: 26px;
+    border-bottom: 3px solid #ddc9a3;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.oic-intro {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 35px;
+}
+
+.oic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.oic-card {
+    background: #fcfcfd;
+    border: 1px solid #eaeaea;
+    border-top: 4px solid #5b152b; /* Línea guinda arriba de cada tarjeta */
+    border-radius: 8px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.oic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+}
+
+.oic-card h4 {
+    color: #5b152b;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.oic-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.oic-card ul {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.oic-card li {
+    margin-bottom: 12px;
+}
+
+.oic-card li:last-child {
+    margin-bottom: 0;
+}
+
+.oic-sintesis {
+    background-color: #fcf8f2;
+    border-left: 5px solid #ddc9a3;
+    padding: 20px 25px;
+    border-radius: 0 8px 8px 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.oic-sintesis strong {
+    color: #5b152b;
+}
+
+.oic-separador {
+    border: 0;
+    height: 1px;
+    background: #dddddd;
+    margin: 60px 0;
+}
+/* =========================================================
+   ESTILOS PARA LA SECCIÓN PLAN DE TRABAJO (PDF)
+   ========================================================= */
+
+.plan-container {
+    text-align: center;
+    max-width: 1900px; /* Un poco más angosto para centrar la atención visual */
+     min-height: 85vh;
+}
+
+.plan-intro-caja {
+    background-color: #fcfcfd;
+    border-left: 6px solid #5b152b; /* Acento guinda */
+    padding: 35px;
+    margin-bottom: 40px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.plan-intro-caja h3 {
+    color: #002855;
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.plan-intro-caja p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.plan-accion {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.plan-accion p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Botón de descarga */
+.btn-descarga-pdf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a11313; /* Guinda institucional */
+    color: #ffffff !important;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(91, 21, 43, 0.3);
+}
+
+.btn-descarga-pdf:hover {
+    background-color: #de1414; /* Tono más claro al pasar el mouse */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+}
+
+.icono-pdf {
+    margin-right: 10px;
+}
+/* =========================================================
+   ESTILOS PARA LA SECCIÓN CRONOGRAMA (LÍNEA DE TIEMPO)
+   ========================================================= */
+
+.cronograma-container {
+    max-width: 2000px;
+}
+
+.timeline {
+    position: relative;
+    margin: 40px 0 20px 20px;
+    padding-left: 30px;
+    border-left: 4px solid #ddc9a3; /* Línea vertical dorada/arena */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* El punto en la línea de tiempo */
+.timeline-dot {
+    position: absolute;
+    left: -41px; /* Centra el punto sobre la línea */
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #5b152b; /* Guinda */
+    border: 4px solid #ffffff; /* Borde blanco para separarlo de la línea */
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* La caja de contenido de cada año */
+.timeline-content {
+    background-color: #fcfcfd;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    border-left: 4px solid #5b152b; /* Al pasar el mouse, resalta el borde izquierdo */
+}
+
+.timeline-content h3 {
+    color: #002855;
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.timeline-content li {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.timeline-content li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content strong {
+    color: #5b152b; /* Resaltamos las palabras clave en guinda */
+}
+
+/* Responsividad de la línea de tiempo */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+    .timeline-dot {
+        left: -31px;
+    }
+    .timeline-content {
+        padding: 20px;
+    }
+    .timeline-content h3 {
+        font-size: 20px;
     }
 }
