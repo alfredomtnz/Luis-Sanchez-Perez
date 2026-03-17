@@ -27,101 +27,415 @@
       ]
     }
     </script>
-
 </head>
 <body>
-    <div class="container">
-        <div class="left-column">
-            <img src="foto.jpg" alt="Profile Photo" class="profile-photo">
-            <h1>Luis Sánchez Pérez</h1>
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="active" onclick="mostrarSeccion('principal', this); return false;">Página principal</a></li>
+                <li><a href="#" onclick="mostrarSeccion('oic', this); return false;">¿Qué busco para el OIC del TJAJAL?</a></li>
+                <li><a href="#" onclick="mostrarSeccion('plan', this); return false;">Conoce mi propuesta de Plan de Trabajo</a></li>
+                <li><a href="#" onclick="mostrarSeccion('cronograma', this); return false;">Cronograma</a></li>
+                <li><a href="#" onclick="mostrarSeccion('trayectoria', this); return false;">MiTrayectoria</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <strong>Doctorante en Seguridad Pública y Políticas Públicas.</strong>
-            <strong>Maestrante en Derechos Humanos.</strong>
-            <strong>Maestría en Seguridad Pública y Políticas Públicas.</strong>
-            <strong>Licenciado en Derecho.</strong>
-            
-
-            <div class="contact-info">
-                <h2>Información de contacto</h2>
+    <main>
+        <section id="principal" class="seccion-contenido" style="display: block;">
+            <div class="caja-nueva-seccion presentacion-container">
                 
-                <p><strong>Correo:</strong> lic.luis.sanchez.perez@gmail.com</p>
-                <p><strong>Nacionalidad:</strong> Mexicano</p>
-            </div>
-        </div>
+                <div class="presentacion-perfil">
+                    <img src="foto.jpg" alt="Luis Sánchez Pérez" class="presentacion-foto">
+                    <div class="presentacion-contacto">
+                        <h3>Contacto</h3>
+                        <p><strong>Correo:</strong><br> <a href="mailto:lic.luis.sanchez.perez@gmail.com">lic.luis.sanchez.perez@gmail.com</a></p>
+                        <p><strong>Nacionalidad:</strong><br> Mexicano</p>
+                    </div>
+                </div>
 
-        <div class="right-column">
-            <div class="education">
-                <h2>Educación</h2>
-                <p><strong>IEXE Universidad:</strong> Doctorante en Seguridad Pública y Políticas Públicas.</p> 
-                <p><strong>Centro de Estudios en Derechos Humanos de la Comisión Estatal de Derechos Humanos en Jalisco:</strong> Maestrante en Derechos Humanos.</p>     
-                <p><strong>IEXE Universidad:</strong> Maestría en Seguridad Pública y Políticas Públicas.</p> Cédula: 12757563
-                <p><strong>Universidad de Guadalajara:</strong> Licenciado en Derecho.</p> Cédula: 9039572
-            </div>
-
-            <div class="skills">
-               
-                <ul>
+                <div class="presentacion-texto">
+                    <h2 class="saludo-titulo">Soy Luis Sánchez Pérez.</h2>
+                    <p class="intro-texto">
+                        Mi formación es jurídica y de políticas públicas: <strong>Licenciado en Derecho</strong> por la Universidad de Guadalajara, con <strong>Maestría en Seguridad Pública y Políticas Públicas</strong>; actualmente <strong>maestrante en Derechos Humanos</strong> y <strong>doctorante en Seguridad Pública y Políticas Públicas</strong>.
+                    </p>
                     
-                </ul>
+                    <div class="filosofia-caja">
+                        <p class="filosofia-intro">Y lo digo así porque para mí no es una lista de grados: <em>es una forma de trabajar</em>.</p>
+                        <ul>
+                            <li><strong>El Derecho</strong> me obliga a la legalidad y al debido proceso.</li>
+                            <li><strong>Las políticas públicas</strong> me obligan a no improvisar: a diagnosticar, planear, medir y corregir.</li>
+                            <li><strong>Los derechos humanos</strong> me recuerdan algo esencial: detrás de cada trámite y cada expediente hay personas, y el trato digno también es parte de la integridad.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-            <div class="experience">
-                <h2>Experiencia laboral</h2>
-                <p><strong>Subdirección del Área Técnica Penitenciaria de la Secretaría de Seguridad Pública de Jalisco (enero 2025 - a la fecha):</strong> </p>
-                <p>
-● Garantizar que el desempeño del personal en los centros penitenciarios se adhiera al estricto respeto de los derechos humanos y las libertades fundamentales, bajo un principio de no discriminación por origen, género, idioma o religión.
-<p></p>● Actualizar los Manuales Administrativos de la institución para asegurar su total alineación con la normatividad y el marco jurídico vigente.
-<p></p>● Colaborar en el diseño, implementación y evaluación de los programas de reinserción social.
-<p></p>● Vigilar que las personas privadas de la libertad (PPL) accedan a un desarrollo integral mediante el cumplimiento de los ejes rectores de la reinserción social durante su estancia.
-<p></p>● Monitorear el desempeño del personal para asegurar un trato digno a las PPL, previniendo estrictamente cualquier acto cruel, inhumano o degradante.
-<p></p>● Gestionar vínculos de colaboración con instituciones gubernamentales, organizaciones civiles y organismos internacionales para fortalecer los procesos de reinserción social.
-<p></p>● Generar informes periódicos y estadísticas sobre el cumplimiento normativo y el avance de los programas operativos para facilitar la toma de decisiones estratégicas.
-<p></p>● Fungir como enlace administrativo ante la Unidad de Transparencia de la Dirección de Reinserción Social.
-<p></p>● Supervisar la implementación de los cinco ejes rectores de la reinserción social, garantizando que la población privada de la libertad (PPL) cuente con acceso efectivo a programas de educación formal, servicios de salud integral, activación física, y esquemas de trabajo y capacitación laboral en vinculación con la Industria Jalisciense de Rehabilitación Social (INJALRESO).
+        <section id="oic" class="seccion-contenido" style="display: none;">
+            <div class="caja-nueva-seccion oic-container">
+                
+                <h2 class="titulo-seccion-principal">¿Qué busco para el OIC del TJAJAL?</h2>
+                
+                <div class="oic-bloque">
+                    <h3 class="oic-tema-titulo">1. Integridad, Transparencia, Ética y Confianza</h3>
+                    <div class="oic-intro">
+                        <p>Para mí, la integridad, la transparencia y la ética se sostienen con reglas claras, trazabilidad y controles verificables. Y cuando se habla de riesgos de corrupción y de percepción ciudadana, la respuesta institucional tiene que ser completa: prevenir y controlar hacia adentro, y generar confianza hacia afuera con resultados medibles.</p>
+                        <p>Por eso, si la pregunta es qué haría para garantizar transparencia y ética en el actuar, qué acciones tomaría ante riesgos de corrupción, cómo fortalecería el OIC o cómo reconstruiría la confianza ciudadana, mi respuesta se resume en una ruta: <strong>decisiones trazables, controles preventivos y rendición de cuentas medible.</strong></p>
+                    </div>
 
-</p>
+                    <div class="oic-grid">
+                        <div class="oic-card">
+                            <h4>1) Transparencia y ética: decisiones trazables</h4>
+                            <p>La primera medida es hacer trazable la actuación pública:</p>
+                            <ul>
+                                <li><strong>Criterios y formatos base:</strong> Para actuaciones sensibles (acuerdos, requerimientos, notificaciones), reduciendo discrecionalidad.</li>
+                                <li><strong>Control de plazos:</strong> Para asegurar oportunidad y continuidad.</li>
+                                <li><strong>Evidencia mínima obligatoria:</strong> En procesos críticos (compras, RRHH, archivos).</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>2) Prevención y fortalecimiento del OIC</h4>
+                            <p>Un OIC funciona mejor cuando opera con lógica preventiva:</p>
+                            <ul>
+                                <li><strong>Detección temprana:</strong> Mapa de Riesgos Anticorrupción e Integridad para priorizar por impacto.</li>
+                                <li><strong>Contención inmediata:</strong> Ante focos rojos, reforzar controles y ajustar rutas.</li>
+                                <li><strong>Corrección estructural:</strong> Cerrar la causa estandarizando, capacitando y auditando.</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>3) Código de ética y confianza</h4>
+                            <p>Un código de ética efectivo no es el que se difunde; es el que se cumple y se verifica.</p>
+                            <ul>
+                                <li><strong>Principios claros:</strong> Reglas aterrizadas sobre conflicto de interés y presiones indebidas.</li>
+                                <li><strong>Cumplimiento exigible:</strong> Capacitación, adhesión y consecuencias.</li>
+                                <li><strong>Confianza y resultados:</strong> Canal accesible con folio, plazos de respuesta e indicadores de desempeño.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="oic-sintesis">
+                        <strong>En síntesis:</strong> Integridad como sistema: decisiones trazables, riesgos gestionados, código exigible y confianza basada en evidencia e indicadores. Todo en coordinación con el sistema estatal anticorrupción.
+                    </div>
+                </div>
 
-            <p><strong>Director de Seguimiento de la Jefatura de Gabinete del Gobierno Municipal de Tlajomulco de Zúñiga, Jalisco (octubre 2024 - diciembre 2024):</strong></p>
-<p></p>● Investigar y sustanciar los procedimientos administrativos derivados de quejas o denuncias por incumplimiento de obligaciones de los servidores públicos, clasificando faltas graves y no graves conforme a la ley en la materia.
-<p></p>● Sistematizar la información del desempeño gubernamental para identificar tendencias y riesgos de corrupción, desarrollando herramientas de análisis de datos que fundamenten la toma de decisiones basada en evidencia.
-<p></p>● Coordinar la implementación y vigilancia de la Ley de Responsabilidades Políticas y Administrativas del Estado de Jalisco y las reglas de integridad, alineando la conducta de los servidores públicos a los lineamientos del Sistema Nacional Anticorrupción.
-<p></p>● Actualizar y fortalecer el marco normativo municipal, garantizando que los instrumentos internos, órganos y consejos colegiados sean coherentes con la normatividad general en materia de responsabilidades y transparencia.
-<p></p>● Brindar asesoría técnica y normativa a las dependencias municipales para fortalecer sus procesos internos, requiriendo la información necesaria para el cumplimiento de las atribuciones de control y supervisión.
-<p></p>● Diseñar programas de verificación de cumplimiento para asegurar que los servidores públicos se apeguen a las disposiciones legales aplicables, evaluando el avance de los objetivos y metas de la administración municipal.
+                <hr class="oic-separador">
 
-            <p><strong>Titular de la Secretaría Técnica de la Dirección General de Desarrollo Político de la Secretaría General de Gobierno del Estado de México (febrero 2024 - septiembre 2024):</strong></p>
-<p></p>● Dictaminación e Instrumentación Jurídica. Elaborar, revisar y validar legalmente convenios, acuerdos, contratos, reglamentos y demás instrumentos jurídicos necesarios para la operatividad de la Dirección, asegurando su solvencia normativa.
-<p></p>● Asesoría Estratégica. Brindar consultoría legal en materia de desarrollo político, garantizando que las decisiones y acciones institucionales se apeguen estrictamente a la legislación vigente.
-<p></p>● Interpretación y Aplicación Normativa. Analizar y aplicar el marco jurídico federal y estatal relacionado con las atribuciones de la Dirección, asegurando una correcta implementación en los procesos administrativos y de gestión política.
-<p></p>● Análisis y Actualización Legislativa. Monitorear permanentemente las reformas y nuevas disposiciones legales, evaluando su impacto en las actividades de la Dirección e informando estratégicamente sobre los ajustes necesarios.
-<p></p>● Gestión y Vinculación Interinstitucional. Atender y gestionar los asuntos jurídicos de la Dirección, coordinando la representación y defensa de los intereses institucionales ante diversas instancias gubernamentales y organismos externos.
-<p></p>● Control de Legalidad. Supervisar que todos los proyectos de la Dirección General contribuyan al fortalecimiento del Estado de Derecho y al cumplimiento de los objetivos del Plan de Desarrollo del Estado de México.
+                <div class="oic-bloque">
+                    <h3 class="oic-tema-titulo">2. Prevención de faltas administrativas y responsabilidades</h3>
+                    <div class="oic-intro">
+                        <p>Para prevenir actos u omisiones que puedan constituir responsabilidades administrativas, mi propuesta parte de una idea central del Plan de Trabajo 2026–2030: la prevención se construye con reglas claras, cultura institucional y verificación inteligente, para que el riesgo se detecte a tiempo y no se convierta en falta.</p>
+                    </div>
 
+                    <div class="oic-grid">
+                        <div class="oic-card">
+                            <h4>1) Prevención por diseño: reglas claras</h4>
+                            <p>En los primeros 90 días se generan herramientas para hacer "visible" el riesgo:</p>
+                            <ul>
+                                <li><strong>Evaluación del OIC y entorno:</strong> Ubicar retrasos y debilidades documentales.</li>
+                                <li><strong>Mapa de Riesgos:</strong> Identificando procesos críticos y priorizando.</li>
+                                <li><strong>Tablero de Control:</strong> Indicadores y metas trimestrales para dar seguimiento verificable.</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>2) Prevención por conducta: integridad y canales</h4>
+                            <p>El personal debe saber qué está permitido, prohibido y qué reportar:</p>
+                            <ul>
+                                <li><strong>Programa de Integridad y Ética:</strong> Capacitación anual obligatoria y contenidos prácticos sobre conflicto de interés y trato digno.</li>
+                                <li><strong>Canales seguros de denuncia:</strong> Reglas claras de confidencialidad y prevención de represalias.</li>
+                                <li><strong>Verificación de manuales:</strong> Mantener actualizados manuales de organización y perfiles de puestos.</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>3) Prevención por verificación: auditoría inteligente</h4>
+                            <p>Para que la prevención sea real, tiene que haber verificación continua:</p>
+                            <ul>
+                                <li><strong>Auditoría enfocada a riesgos:</strong> Seguimiento de observaciones con evidencia.</li>
+                                <li><strong>Inspección permanente:</strong> En procesos críticos (archivos, compras, acceso a la información).</li>
+                                <li><strong>Declaraciones:</strong> Patrimoniales, fiscales y de conflicto de interés, con verificación por riesgo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="oic-sintesis">
+                        <strong>En síntesis:</strong> Prevención por diseño, por conducta y por verificación, con instrumentos medibles y trazables. Si el riesgo se vuelve visible, se gestiona y se evita la falta protegiendo a la institución.
+                    </div>
+                </div>
 
-            <p><strong>Director del Despacho de la Sindicatura del Municipio de Guadalajara (octubre 2021 - junio 2022):</strong></p>
-<p></p>● Dirigir y supervisar la operación administrativa y técnica del Despacho del Síndico, optimizando los recursos humanos y materiales para el correcto ejercicio de sus atribuciones constitucionales.
-<p></p>● Gestionar el flujo de información y documentación oficial, garantizando el resguardo y la trazabilidad de los asuntos de relevancia jurídica para el Municipio.
-<p></p>● Coordinar la integración de insumos técnicos, investigaciones y redacciones preliminares necesarias para la representación legal y la defensa de los intereses municipales ante diversas instancias.
-<p></p>● Establecer sistemas de monitoreo sobre los asuntos turnados al despacho, verificando el cumplimiento de términos legales y la ejecución de acciones derivadas de las sesiones de Ayuntamiento.
-<p></p>● Representar al Despacho en mesas de trabajo y reuniones de enlace con áreas operativas, asegurando la alineación de objetivos institucionales bajo los principios de legalidad y transparencia.
+                <hr class="oic-separador">
 
-            <p><strong>Abogado de la Secretaría General del Municipio de Guadalajara (octubre 2018 - septiembre 2021):</strong></p>
-<p></p>● Validación y Dictaminación Jurídica. Análisis y revisión técnica de las iniciativas y documentación presentada por las Regidurías, asegurando la suficiencia legal y normativa para su desahogo en las Sesiones de Ayuntamiento.
-<p></p>● Gestión de Procesos Legislativos Municipales. Coordinación y sustanciación de expedientes, así como la integración de órdenes del día, garantizando el orden jurídico y la transparencia en el proceso de toma de decisiones del Pleno.
-<p></p>● Enlace y Asesoría Interinstitucional. Provisión de soporte jurídico y normativo especializado a las Regidurías en su vinculación con las diversas dependencias de la administración pública, facilitando la viabilidad legal de sus proyectos.
-<p></p>● Modernización Regulatoria y Opinión Técnica. Elaboración de opiniones técnicas y jurídicas para la actualización del marco reglamentario municipal, impulsando reformas administrativas que optimicen la gestión pública y el beneficio de la ciudadanía.
+                <div class="oic-bloque">
+                    <h3 class="oic-tema-titulo">3. Recursos indispensables y austeridad</h3>
+                    <div class="oic-intro">
+                        <p>Para que el Órgano Interno de Control ejerza sus atribuciones y fortalezca el control interno del Tribunal, los recursos indispensables son cruciales. Austeridad no es parálisis; es disciplina del gasto con evidencia, seguimiento verificable y medición.</p>
+                    </div>
 
-            <p><strong>Investigador de Medios de Información y Mecanismos de Participación Ciudadana. Laboratorio de Innovación Democrática (LID) (2015 a la fecha):</strong></p>
-El Laboratorio de Innovación Democrática (LID), una organización de la sociedad civil sin fines de lucro, plural, apartidista e independiente. LID busca incidir para generar innovaciones democráticas que contribuyan a incrementar la calidad de la ciudadanía en el país y fortalecer los espacios participativos con los que cuentan los ciudadanos. 
+                    <div class="oic-grid">
+                        <div class="oic-card">
+                            <h4>1) Recursos Indispensables (Humanos y Herramientas)</h4>
+                            <ul>
+                                <li><strong>Capacidades humanas especializadas:</strong> Asegurar perfiles clave para auditoría, investigación, sustanciación y soporte técnico-administrativo.</li>
+                                <li><strong>Herramientas de control documental:</strong> Control de términos, seguimiento de expedientes y repositorio documental en cumplimiento con la Ley de Archivos.</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>2) Recursos Indispensables (Acceso y Capacitación)</h4>
+                            <ul>
+                                <li><strong>Acceso oportuno a información:</strong> Para procesos críticos como compras, contratos, recursos humanos e inventarios.</li>
+                                <li><strong>Capacitación aplicada y normatividad:</strong> En control interno, integridad, conflicto de interés y responsabilidades administrativas, además de formatos base.</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>3) Austeridad en el OIC y el Tribunal</h4>
+                            <ul>
+                                <li><strong>En el OIC:</strong> Administrar presupuesto con criterios de necesidad, priorización, digitalización y reducción de costos operativos innecesarios.</li>
+                                <li><strong>En el Tribunal:</strong> Impulsar austeridad fortaleciendo controles preventivos, exigiendo reglas claras y evidencia obligatoria en procesos de compras y midiendo indicadores de eficiencia.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="oic-sintesis">
+                        <strong>En síntesis:</strong> Los recursos indispensables del OIC son los que garantizan su independencia real (personas clave, control documental, acceso a información) y la austeridad que se promovería es una austeridad de control interno: gasto con justificación y decisiones verificables.
+                    </div>
+                </div>
 
-<p><strong>Legorreta Abogados (julio 2022 a la fecha):</strong></p>
-Abogado Asociado y Consultor Jurídico especializado en Derecho Administrativo y Derechos Humanos. Cuento con una trayectoria sólida brindando capacitación técnica y asesoría estratégica a particulares, organismos gubernamentales y empresas del sector privado. Mi labor se centra en el diseño e impartición de programas formativos orientados a garantizar el cumplimiento normativo y la protección de los derechos fundamentales, facilitando la correcta gestión institucional y la defensa legal efectiva en el ámbito administrativo.
+                <hr class="oic-separador">
 
-<p><strong>Analista político con vocación de servicio, dedicado a la colaboración semanal en prensa escrita (Milenio, Siker y Semanario de la Arquidiócesis) (2015 a la fecha):</strong></p>
-A través de mis columnas de opinión, articulo propuestas sobre políticas públicas que impactan directamente en la mejora de la calidad de vida urbana. Mi trayectoria se distingue por un compromiso firme con la defensa de los derechos humanos, traduciendo temas complejos de la realidad nacional en análisis accesibles que promueven la justicia social y el desarrollo humano.
-          
-        </div>
-    </div>
+                <div class="oic-bloque">
+                    <h3 class="oic-tema-titulo">4. Primeras Acciones</h3>
+                    <div class="oic-intro">
+                        <p>Como lo establece el Plan de Trabajo consultable en ésta página, mis primeras acciones al iniciar la gestión en la titularidad del Órgano Interno de Control del Tribunal tendrían un propósito muy claro: dar orden, certeza y control desde el primer día, con una ruta verificable y con resultados medibles en el corto plazo.</p>
+                    </div>
+
+                    <div class="oic-grid">
+                        <div class="oic-card">
+                            <h4>1) Tres productos en los primeros 90 días</h4>
+                            <ul>
+                                <li><strong>Evaluación del OIC y entorno:</strong> Inventario de asuntos, análisis de tiempos y revisión de calidad del expediente para ubicar rezagos.</li>
+                                <li><strong>Mapa de Riesgos:</strong> Identificando procesos críticos y priorizando por impacto para generar recomendaciones inmediatas.</li>
+                                <li><strong>Tablero de Control:</strong> Indicadores y metas trimestrales para sustentar el desempeño del OIC en evidencia.</li>
+                            </ul>
+                        </div>
+                        <div class="oic-card">
+                            <h4>2) Acciones operativas (0 a 6 meses)</h4>
+                            <p>Para regularizar rezagos con enfoque de riesgo:</p>
+                            <ul>
+                                <li><strong>Semaforización de asuntos:</strong> Y criterios claros de admisión y canalización.</li>
+                                <li><strong>Control procesal:</strong> De términos y agenda.</li>
+                                <li><strong>Estandarización de formatos:</strong> Acuerdos, requerimientos, notificaciones y actas para reducir errores y puntos ciegos.</li>
+                            </ul>
+                       </div>
+                </div>
+                    <div class="oic-sintesis">
+                        <strong>En síntesis:</strong> Mis primeras acciones no serían aisladas. Serían una ruta completa de arranque: diagnosticar, priorizar, estandarizar, medir y corregir; con enfoque preventivo y con resultados comprobables para el Tribunal, para ustedes y para la ciudadanía.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="plan" class="seccion-contenido" style="display: none;">
+            <div class="caja-nueva-seccion plan-container">
+                
+                <h2 class="titulo-seccion-principal">Conoce mi propuesta de Plan de Trabajo</h2>
+                
+                <div class="plan-intro-caja">
+                    <h3>¿Para qué mostrar una propuesta de Plan de Trabajo?</h3>
+                    <p>Los Planes de Trabajo son herramientas de gestión y planificación donde se detallan los pasos a seguir para alcanzar objetivos específicos.</p>
+                </div>
+
+                <div class="plan-accion">
+                    <p>Te invito a consultar el documento completo con el diagnóstico, los ejes estratégicos y las líneas de acción operativa trazadas para el periodo 2026-2030.</p>
+                    
+                    <a href="PLAN DE TRABAJO.pdf" target="_blank" class="btn-descarga-pdf">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icono-pdf">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                        Abrir / Descargar Plan de Trabajo (PDF)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cronograma" class="seccion-contenido" style="display: none;">
+            <div class="caja-nueva-seccion cronograma-container">
+                
+                <h2 class="titulo-seccion-principal">Cronograma 2026-2029</h2>
+                
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Año 1 (2026): Orden, diagnóstico y control</h3>
+                            <ul>
+                                <li>Durante el primer año se realiza el <strong>Diagnóstico general, el Mapa de Riesgos Anticorrupción y un Tablero de Control</strong> con metas trimestrales.</li>
+                                <li>En paralelo se arranca el <strong>Modelo de Gestión de casos</strong> con la realización de registros, acuses, semaforización y bitácora, se implementa el control de términos y el checklist de calidad jurídica.</li>
+                                <li>Se emite el <strong>Programa Anual de Auditorías</strong> con base en riesgos y se establecen los lineamientos mínimos de control documental y delegación funcional.</li>
+                                <li>El año cierra con un <strong>informe anual y métricas defendibles</strong> como rezagos, auditorías, verificaciones, omisos y avances normativos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Año 2 (2027): Consolidación operativa</h3>
+                            <ul>
+                                <li>Se consolida la <strong>operación madura de casos y substanciación</strong>: manuales en versión mejorada, control de términos "sin excepciones", repositorio de criterios y estrategia de defensa jurídica.</li>
+                                <li>La <strong>auditoría por riesgos</strong> se vuelve rutina con seguimiento estricto y cierre verificable de observaciones.</li>
+                                <li>Se ejecutan rondas sistemáticas de <strong>verificación institucional</strong> y se fortalece el control de declaraciones con verificación de la evolución patrimonial por muestras de riesgo.</li>
+                                <li>Se evalúa y ajusta anualmente el <strong>Programa de Integridad</strong> con capacitaciones, canales seguros, prevención de represalias y se cierra con un informe anual de tendencias y reincidencias.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Año 3 (2028): Prevención avanzada y mejora continua</h3>
+                            <ul>
+                                <li>Se actualiza el <strong>Mapa de Riesgos</strong> y se refuerza el tablero con metas del año.</li>
+                                <li>Se aplican <strong>auditorías temáticas y verificaciones focalizadas</strong> en procesos críticos en los archivos, compras, Recursos Humanos y trazabilidad.</li>
+                                <li>Se implementan <strong>planes de mejora por área</strong> de "segunda generación" con verificación de cumplimiento. Se fortalece la defendibilidad: revisión técnica previa reforzada, repositorio actualizado y metodología afinada.</li>
+                                <li>Se consolida la <strong>verificación por riesgo en declaraciones</strong> sobre inconsistencias, cambios atípicos y conflictos potenciales. Cierre con informe comparativo 2026-2028 y KPIs consolidados.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Año 4 (2029): Sostenibilidad institucional y transferencia ordenada</h3>
+                            <ul>
+                                <li>Se concluye el proceso de elaboración de los <strong>manuales de organización, gestión de casos, calidad jurídica/defensa y orden documental</strong>, asegurando la efectividad de los procesos.</li>
+                                <li><strong>Auditoría y verificación</strong> operan como práctica permanente con cierre verificable estándar. Se consolida el Programa de Integridad con indicadores estables y acciones preventivas sostenidas.</li>
+                                <li>Se integra un <strong>paquete de continuidad</strong> con base en la elaboración de tableros, manuales, formatos y calendarios, para una transición sin pérdida de operación.</li>
+                                <li>Cerrando con un <strong>Informe final 2026-2029</strong> y un inventario normativo/protocolario vigente con ruta de actualización 2030.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="trayectoria" class="seccion-contenido" style="display: none;">
+            
+            <div class="container">
+                <div class="left-column">
+                    <img src="foto.jpg" alt="Profile Photo" class="profile-photo">
+                    <h1>Luis Sánchez Pérez</h1>
+
+                    <strong>Doctorante en Seguridad Pública y Políticas Públicas.</strong>
+                    <strong>Maestrante en Derechos Humanos.</strong>
+                    <strong>Maestría en Seguridad Pública y Políticas Públicas.</strong>
+                    <strong>Licenciado en Derecho.</strong>
+                    
+                    <div class="contact-info">
+                        <h2>Información de contacto</h2>
+                        
+                        <p><strong>Correo:</strong> lic.luis.sanchez.perez@gmail.com</p>
+                        <p><strong>Nacionalidad:</strong> Mexicano</p>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="education">
+                        <h2>Educación</h2>
+                        <p><strong>IEXE Universidad:</strong> Doctorante en Seguridad Pública y Políticas Públicas.</p> 
+                        <p><strong>Centro de Estudios en Derechos Humanos de la Comisión Estatal de Derechos Humanos en Jalisco:</strong> Maestrante en Derechos Humanos.</p>     
+                        <p><strong>IEXE Universidad:</strong> Maestría en Seguridad Pública y Políticas Públicas.</p> Cédula: 12757563
+                        <p><strong>Universidad de Guadalajara:</strong> Licenciado en Derecho.</p> Cédula: 9039572
+                    </div>
+
+                    <div class="skills">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="experience">
+                        <h2>Experiencia laboral</h2>
+                        <p><strong>Subdirección del Área Técnica Penitenciaria de la Secretaría de Seguridad Pública de Jalisco (enero 2025 - a la fecha):</strong> </p>
+                        <p>
+                        ● Garantizar que el desempeño del personal en los centros penitenciarios se adhiera al estricto respeto de los derechos humanos y las libertades fundamentales, bajo un principio de no discriminación por origen, género, idioma o religión.
+                        <p></p>● Actualizar los Manuales Administrativos de la institución para asegurar su total alineación con la normatividad y el marco jurídico vigente.
+                        <p></p>● Colaborar en el diseño, implementación y evaluación de los programas de reinserción social.
+                        <p></p>● Vigilar que las personas privadas de la libertad (PPL) accedan a un desarrollo integral mediante el cumplimiento de los ejes rectores de la reinserción social durante su estancia.
+                        <p></p>● Monitorear el desempeño del personal para asegurar un trato digno a las PPL, previniendo estrictamente cualquier acto cruel, inhumano o degradante.
+                        <p></p>● Gestionar vínculos de colaboración con instituciones gubernamentales, organizaciones civiles y organismos internacionales para fortalecer los procesos de reinserción social.
+                        <p></p>● Generar informes periódicos y estadísticas sobre el cumplimiento normativo y el avance de los programas operativos para facilitar la toma de decisiones estratégicas.
+                        <p></p>● Fungir como enlace administrativo ante la Unidad de Transparencia de la Dirección de Reinserción Social.
+                        <p></p>● Supervisar la implementación de los cinco ejes rectores de la reinserción social, garantizando que la población privada de la libertad (PPL) cuente con acceso efectivo a programas de educación formal, servicios de salud integral, activación física, y esquemas de trabajo y capacitación laboral en vinculación con la Industria Jalisciense de Rehabilitación Social (INJALRESO).
+                        </p>
+
+                        <p><strong>Director de Seguimiento de la Jefatura de Gabinete del Gobierno Municipal de Tlajomulco de Zúñiga, Jalisco (octubre 2024 - diciembre 2024):</strong></p>
+                        <p></p>● Investigar y sustanciar los procedimientos administrativos derivados de quejas o denuncias por incumplimiento de obligaciones de los servidores públicos, clasificando faltas graves y no graves conforme a la ley en la materia.
+                        <p></p>● Sistematizar la información del desempeño gubernamental para identificar tendencias y riesgos de corrupción, desarrollando herramientas de análisis de datos que fundamenten la toma de decisiones basada en evidencia.
+                        <p></p>● Coordinar la implementación y vigilancia de la Ley de Responsabilidades Políticas y Administrativas del Estado de Jalisco y las reglas de integridad, alineando la conducta de los servidores públicos a los lineamientos del Sistema Nacional Anticorrupción.
+                        <p></p>● Actualizar y fortalecer el marco normativo municipal, garantizando que los instrumentos internos, órganos y consejos colegiados sean coherentes con la normatividad general en materia de responsabilidades y transparencia.
+                        <p></p>● Brindar asesoría técnica y normativa a las dependencias municipales para fortalecer sus procesos internos, requiriendo la información necesaria para el cumplimiento de las atribuciones de control y supervisión.
+                        <p></p>● Diseñar programas de verificación de cumplimiento para asegurar que los servidores públicos se apeguen a las disposiciones legales aplicables, evaluando el avance de los objetivos y metas de la administración municipal.
+
+                        <p><strong>Titular de la Secretaría Técnica de la Dirección General de Desarrollo Político de la Secretaría General de Gobierno del Estado de México (febrero 2024 - septiembre 2024):</strong></p>
+                        <p></p>● Dictaminación e Instrumentación Jurídica. Elaborar, revisar y validar legalmente convenios, acuerdos, contratos, reglamentos y demás instrumentos jurídicos necesarios para la operatividad de la Dirección, asegurando su solvencia normativa.
+                        <p></p>● Asesoría Estratégica. Brindar consultoría legal en materia de desarrollo político, garantizando que las decisiones y acciones institucionales se apeguen estrictamente a la legislación vigente.
+                        <p></p>● Interpretación y Aplicación Normativa. Analizar y aplicar el marco jurídico federal y estatal relacionado con las atribuciones de la Dirección, asegurando una correcta implementación en los procesos administrativos y de gestión política.
+                        <p></p>● Análisis y Actualización Legislativa. Monitorear permanentemente las reformas y nuevas disposiciones legales, evaluando su impacto en las actividades de la Dirección e informando estratégicamente sobre los ajustes necesarios.
+                        <p></p>● Gestión y Vinculación Interinstitucional. Atender y gestionar los asuntos jurídicos de la Dirección, coordinando la representación y defensa de los intereses institucionales ante diversas instancias gubernamentales y organismos externos.
+                        <p></p>● Control de Legalidad. Supervisar que todos los proyectos de la Dirección General contribuyan al fortalecimiento del Estado de Derecho y al cumplimiento de los objetivos del Plan de Desarrollo del Estado de México.
+
+                        <p><strong>Director del Despacho de la Sindicatura del Municipio de Guadalajara (octubre 2021 - junio 2022):</strong></p>
+                        <p></p>● Dirigir y supervisar la operación administrativa y técnica del Despacho del Síndico, optimizando los recursos humanos y materiales para el correcto ejercicio de sus atribuciones constitucionales.
+                        <p></p>● Gestionar el flujo de información y documentación oficial, garantizando el resguardo y la trazabilidad de los asuntos de relevancia jurídica para el Municipio.
+                        <p></p>● Coordinar la integración de insumos técnicos, investigaciones y redacciones preliminares necesarias para la representación legal y la defensa de los intereses municipales ante diversas instancias.
+                        <p></p>● Establecer sistemas de monitoreo sobre los asuntos turnados al despacho, verificando el cumplimiento de términos legales y la ejecución de acciones derivadas de las sesiones de Ayuntamiento.
+                        <p></p>● Representar al Despacho en mesas de trabajo y reuniones de enlace con áreas operativas, asegurando la alineación de objetivos institucionales bajo los principios de legalidad y transparencia.
+
+                        <p><strong>Abogado de la Secretaría General del Municipio de Guadalajara (octubre 2018 - septiembre 2021):</strong></p>
+                        <p></p>● Validación y Dictaminación Jurídica. Análisis y revisión técnica de las iniciativas y documentación presentada por las Regidurías, asegurando la suficiencia legal y normativa para su desahogo en las Sesiones de Ayuntamiento.
+                        <p></p>● Gestión de Procesos Legislativos Municipales. Coordinación y sustanciación de expedientes, así como la integración de órdenes del día, garantizando el orden jurídico y la transparencia en el proceso de toma de decisiones del Pleno.
+                        <p></p>● Enlace y Asesoría Interinstitucional. Provisión de soporte jurídico y normativo especializado a las Regidurías en su vinculación con las diversas dependencias de la administración pública, facilitando la viabilidad legal de sus proyectos.
+                        <p></p>● Modernización Regulatoria y Opinión Técnica. Elaboración de opiniones técnicas y jurídicas para la actualización del marco reglamentario municipal, impulsando reformas administrativas que optimicen la gestión pública y el beneficio de la ciudadanía.
+
+                        <p><strong>Investigador de Medios de Información y Mecanismos de Participación Ciudadana. Laboratorio de Innovación Democrática (LID) (2015 a la fecha):</strong></p>
+                        El Laboratorio de Innovación Democrática (LID), una organización de la sociedad civil sin fines de lucro, plural, apartidista e independiente. LID busca incidir para generar innovaciones democráticas que contribuyan a incrementar la calidad de la ciudadanía en el país y fortalecer los espacios participativos con los que cuentan los ciudadanos. 
+
+                        <p><strong>Legorreta Abogados (julio 2022 a la fecha):</strong></p>
+                        Abogado Asociado y Consultor Jurídico especializado en Derecho Administrativo y Derechos Humanos. Cuento con una trayectoria sólida brindando capacitación técnica y asesoría estratégica a particulares, organismos gubernamentales y empresas del sector privado. Mi labor se centra en el diseño e impartición de programas formativos orientados a garantizar el cumplimiento normativo y la protección de los derechos fundamentales, facilitando la correcta gestión institucional y la defensa legal efectiva en el ámbito administrativo.
+
+                        <p><strong>Analista político con vocación de servicio, dedicado a la colaboración semanal en prensa escrita (Milenio, Siker y Semanario de la Arquidiócesis) (2015 a la fecha):</strong></p>
+                        A través de mis columnas de opinión, articulo propuestas sobre políticas públicas que impactan directamente en la mejora de la calidad de vida urbana. Mi trayectoria se distingue por un compromiso firme con la defensa de los derechos humanos, traduciendo temas complejos de la realidad nacional en análisis accesibles que promueven la justicia social y el desarrollo humano.
+                    </div>
+                </div>
+            </div>
+            </section>
+    </main>
+
+    <script>
+        function mostrarSeccion(idSeccion, elementoLink) {
+            // 1. Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.seccion-contenido');
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+
+            // 2. Mostrar la sección seleccionada
+            document.getElementById(idSeccion).style.display = 'block';
+
+            // 3. Quitar la clase 'active' de todos los enlaces del menú
+            const enlaces = document.querySelectorAll('.nav-links a');
+            enlaces.forEach(enlace => {
+                enlace.classList.remove('active');
+            });
+
+            // 4. Poner la clase 'active' al enlace que se le dio clic
+            elementoLink.classList.add('active');
+        }
+    </script>
 </body>
 </html>
-
